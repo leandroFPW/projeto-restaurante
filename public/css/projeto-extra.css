@@ -1,0 +1,30 @@
+.nowrap{white-space: nowrap !important;}
+#grid-produtos .inativo td{color: #888;}
+.table-clientes thead .col-1{font-weight: normal;}
+.table-clientes td{cursor: pointer;}
+#conteudo-cliente .btn-height{padding: 0px;line-height: 1em;padding: 4px 12px;}
+#conteudo-cliente .label-pesquisar{width: 100px;}
+#atendimento-cadastro-cliente{position: relative;}
+#atendimento-cadastro-cliente .overlay{display:none;position: absolute;width: 100%;height: 100%;z-index: 1;top: 0;left: 0;background-color: rgb(255 255 255 / 70%);}
+#resumo-cliente{font-size: 1.2em;}
+#resumo-cliente span{color: #4646c3;}
+#resumo-itens td{font-size: 1.1em;}
+.table-resumo .acao-confirmar button{font-size: 1.4em;}
+#resumo-fiado{width: 90px;display: inline-block;}
+#pedido-obs{margin-bottom: 10px;}
+.box-mesa .mesa-entregue{visibility: hidden;width: 100%;}
+.box-mesa.em-processo .mesa-entregue{visibility: visible;}
+.cozinha .area-table{margin: 0 2%;}
+.cozinha .td-comanda .bg{padding: 10px;background-color: #ececec;}
+.cozinha .td-comanda .bg.bg-status-3{background-color: #fdffe0;}
+.cozinha .td-comanda .bg.bg-status-4{background-color: #bdffa2;}
+.cozinha .acoes .btn{font-weight: bold;width: 48%;}
+.cozinha .acoes .sep{width: 4%;display: inline-block;}
+.filtros .btn-pesquisar{margin-top: 25px;}
+#grid-pedidos .status-novo{background-color: #f4ad9c;}
+#grid-pedidos .status-pago{background-color: #acc7ed;}
+#grid-pedidos .status-em-preparo{background-color: #ffffc3;}
+#grid-pedidos .status-pronto{background-color: #caf7ad;}
+#grid-pedidos .status-entregue{}
+#grid-pedidos .status-cancelado{background-color: #e0cdec;}
+ul.modal-ul{padding-left: 1em;}

@@ -1,0 +1,187 @@
+body{
+    font-family: Roboto, sans-serif;
+    
+}
+.a-left{text-align: left;}
+.a-center{text-align: center;}
+.a-right{text-align: right;}
+.a-justify{text-align: justify;}
+.login .content{
+    margin: auto;
+    float: none;
+}
+.login .content i{
+    position: absolute;
+    left: 0;
+    font-size: 38px;
+}
+.login .content label{
+    display: block;
+    padding-left: 55px;
+    position: relative;
+}
+#main-content{
+    margin-top: 50px;
+    padding-bottom: 35px;
+}
+#main-content .box{
+    border-radius: 5px;
+    background-color: #ccc;
+    /*padding: 3px;  */
+    border: 3px solid #ccc;
+    margin-bottom: 10px;   
+    cursor: pointer;
+}
+#main-content .box .box-txt{
+    font-size: 25px;
+}
+#main-content .box .fas{
+    font-size: 80px;
+    margin: 50px;
+}
+#main-content .box button{
+    display: block;
+    width: 100%;   
+    color: #fff;
+    background-color: #777;
+}
+#main-content .box.em-processo{
+    background-color: #bdffa2;
+    border-color: #bdffa2;
+}
+#main-content .box.selected,
+#main-content .box:hover{border-color: #4a4a4a;}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+}
+footer .container{position: relative;}
+footer .go-top{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    right: 10px;
+    bottom: 0;
+    font-size: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0 6px;
+    
+}
+/* NAVBAR*/
+.navbar-default .navbar-nav>li>a:hover{
+    background-color: #e7e7e7;
+}
+.atendimento .badge {    
+    padding: 3px 20px;
+    font-size: 30px;    
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #777;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.box-mesa {
+    cursor:pointer;
+}
+
+.tab-pane .row .box .active div{
+    background-color: #337ab7;
+    color:#fff;
+}
+
+.tab-pane .row .active span {
+    background-color: #428bca;    
+}
+.nav .cont{
+    padding: 2px 8px;
+    color: #fff;
+    text-align: center;
+    background-color: #777;
+    border-radius: 20px;
+    margin-left: 15px;
+    font-size: 18px;
+}
+/*.nav>li>.nav-link:focus, 
+.nav>li>.nav-link:hover,
+.nav>li.active>.nav-link{
+    text-decoration: none;
+    background-color: #eee;
+}*/
+.nav .nav-item{position: relative;width: 100%;}
+.nav .nav-link{
+    color: #000;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.nav .active .icone{display: inline-block;}
+.nav .icone{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-size: 30px;
+}
+.nav .active .nav-link{
+    font-weight: bold;
+}
+.nav-pills>li+li{margin-left: 0;}
+/*--- accordion de produtos ---*/
+.simple-table{width: 100%;}
+.simple-table tbody td{padding: 4px 0;}
+.table-itens .td-btn{
+    width: 110px;
+}
+.table-itens input[type=text]{text-align: center;}
+.form-control.input-number{padding: 6px 2px;}
+#accordion-produtos .panel-body{padding: 5px 10px;}
+#accordion-produtos .panel-heading{
+    text-align: center;
+    padding: 0;
+}
+#accordion-produtos a,#accordion-produtos a:hover{text-decoration: none;}
+#accordion-produtos .panel-title a{
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0;
+}
+/*------*/
+.table-clientes thead .col-1{width: 160px;;font-size: 18px;}
+.table-clientes thead input{width: 100%;}
+.table-resumo th{font-size: 20px;}
+.table-resumo .acao-confirmar button{width: 100%;}
+/*media query somente para celular*/
+@media only screen and (min-width: 751px) {
+    .atendimento .brand-pills > li > a {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .atendimento li.brand-nav.active a:after{
+    	content: " ";
+    	display: block;
+    	width: 0;
+    	height: 0;
+    	border-top: 20px solid transparent;
+    	border-bottom: 20px solid transparent;
+    	border-left: 9px solid #428bca;
+    	position: absolute;
+    	top: 50%;
+    	margin-top: -20px;
+    	left: 100%;
+    	z-index: 2;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .nav .nav-item.last{width: 100%;border-bottom: 1px solid;margin-bottom: 20px;font-size: 0;}
+    .nav .nav-item{float: left;width: 50%;}
+    footer .go-top{display: block;}
+}
